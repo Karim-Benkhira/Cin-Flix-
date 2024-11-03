@@ -12,6 +12,10 @@
         .rev-img{
             max-width: 250px;
         }
+        #dark-mode-toggle:hover{
+            color: black;
+            background-color: brown;
+        }
     </style>
 </head>
 <body>
@@ -27,7 +31,7 @@
                     <li><button onclick="Dark()" id="lightbtn" style="display: none; background-color: white; color: black;">light Mode</button></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="Details.html">Movie Details</a></li>
-                    <li><a href="favllist.html">My List</a></li>
+                    <li><a href="#">My List</a></li>
                     <li>
                         <a href="#" class="btn btn-hover">
                             <span>Sign in</span>
@@ -43,13 +47,14 @@
     </div>
 
 
-    <div class="head__">
-        <h1>Movie Review App</h1>
-    </div>
+    <!-- <div class="head__">
+        <h1>Ma Liste</h1>
+    </div> -->
 
     <main>
+        <button id="dark-mode-toggle">clear localStorage</button>
         <section id="movie-gallery">
-            <h2>Select a Movie</h2>
+            <h2>Ma Liste : </h2>
             <div id="movie-list">
 
             </div>
@@ -73,10 +78,6 @@
                 <button type="submit">Submit Review</button><br>
                 <button style="background-color: hsl(16, 54%, 49%);" id="add-fav">Add to Favorite list</button>
             </form>
-        </section>
-        <section id="reviews">
-            <h2>Reviews</h2>
-            <div id="review-list"></div>
         </section>
     </main>
 
@@ -166,7 +167,7 @@
         Copyright 2024  
     </div>
     <!-- END FOOTER SECTION -->
-    <script src="rev.js"></script>
+    <script src="fav.js"></script>
     <script src="dark.js"></script>
     <script src="menu.js"></script>
 </body>
